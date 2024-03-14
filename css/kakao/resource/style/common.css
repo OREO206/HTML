@@ -8,10 +8,119 @@
     src: url(../font/KakaoBold.ttf);
 }
 
-.kakao-regular-font {
-    font-family: 'KakaoRegular', sans-serif;
+* {
+    font-family: KakaoRegular, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
-.kakao-bold-font {
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    width: 1712px;
+}
+
+.title-box {
+    font-size: 52px;
+    line-height: 78px;
+    letter-spacing: -1px; /*글자간격*/
     font-family: 'KakaoBold', sans-serif;
+    font-weight: 400;
+}
+
+.title-box::before {
+    background-image: url(https://www.kakaocorp.com/page/ico_tit_service.gif);
+    width: 78px;
+    height: 78px;
+    /*block하면 한 라인을 다 차지해서 inline으로 잡아줌*/
+    display: inline-block; 
+    /* content 값이 있어야만 브라우저에 출력되므로 빈값으로 지정해야 함*/
+    content: ""; 
+    background-size: 100%;
+    vertical-align: top;
+}
+
+/* Contents Box */
+.contents-box {
+    display: grid;
+    grid-template: 
+    "comunication business" 180px
+    "life-syle shopping" 180px
+    "entertainment social" 180px
+    / 1fr 1fr;
+    gap: 16px
+    ;
+}
+
+.content-card {
+    background-color: rgba(240, 240, 240, 1);
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 64px;
+}
+
+.content-title {
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+.content-icons-box {
+    display: flex;
+    gap: 12px;
+}
+
+.icon-button {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+}
+
+.more-button:hover {
+    cursor: pointer;
+}
+
+/*More Box*/
+.more-box {
+    display: flex;
+    justify-content: center;
+}
+
+.more-button {
+    width: 316px;
+    height: 76px;
+    background-color: rgba(240, 240, 240, 1);
+    font-size: 20px;
+    letter-spacing: -0.4;
+    border-radius: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-buttona:hover {
+    cursor: pointer;
+}
+
+.round-black {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+
+/*more-button에 마우스를 올렸을 때 round-black 값을 바꿔라*/
+.more-button:hover .round-black {
+    background-color: rgba(0, 0, 0, 0.8);
 }
