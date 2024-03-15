@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'KakaoRegular';
+    src: url(../font/KakaoRegular.ttf);
+}
+
+@font-face {
+    font-family: 'KakaoBold' ;
+    src: url(../font/KakaoBold.ttf);
+}
+
+*{
+    font-family: KakaoRegular, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-width: 1712px;
+}
+
+.all-content {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    width:1712px;
+}
+
+.allbox {
+    display: flex;
+    gap: 16px;
+}
+
+.box1 {
+    height: 110px;
+    background-color: rgba(240, 240, 240, 1);
+    border-radius: 20px;
+    padding: 36px 40px;
+    width: 848px;
+    margin-top: 20px;
+}
+
+.box-header {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.ddd {
+    display: flex;
+    gap: 10px;
+}
+
+
+.box1:hover {
+    cursor: pointer;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+}
+
+.kakao {
+    background-image: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png);
+}
+
+.qheh {
+    width: 73px;
+    height: 33px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    line-height: 30px;
+}
+
+.wja {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/64/64576.png);
+    width: 15px;
+    height: 15px;
+    background-size: 100%;
+    display: block;
+    float: right;
+    margin-right: 20px;
+}
+
+.font {
+    font-size: 24px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.allbox2 {
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    flex-grow: 1;
+    height: 70px;
+    text-align: center;
+    padding: 5px;
+}
+
+.game {
+    display: flex;
+    flex-grow: 1;
+    height: 110px;
+    background-color: rgba(240, 240, 240, 1); 
+    font-size: 24px;
+    letter-spacing: -0.4px;
+    border-radius: 24px;
+    justify-content: space-between;
+    padding: 0px 44px;
+    gap: 4px;
+}
+
+.font-news {
+    display: flex;
+    align-items: center;
+}
+
+.go {
+    display: flex;
+    gap: 10px;
+    font-size: 17px;
+    background-color: rgba(240, 240, 240, 1);
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.round-black {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.game:hover {
+    cursor: pointer;
+}
+
+.game:hover .round-black {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
