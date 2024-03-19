@@ -76,7 +76,7 @@ console.log('==============================');
 */
 let randomNumber = Math.random();// 0 ~ 1 사이의 랜덤 숫자
 console.log(randomNumber);
-
+// 0.5 초과면 반복 이하면 멈춤
 while(randomNumber > 0.5) {
     randomNumber = Math.random();
     console.log(randomNumber);

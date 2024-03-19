@@ -4,7 +4,7 @@
 
 /*
     문자열 타입으로 형변환
-    - + 연산자를 사용할 때 좌항과 우항 중 하나라도 문자열이 존재하면 문자열이 아닌 하응ㄹ 문자열로 변경하여 연결 연산함
+    - + 연산자를 사용할 때 좌항과 우항 중 하나라도 문자열이 존재하면 문자열이 아닌 항을 문자열로 변경하여 연결 연산함
 */
 console.log(1 + '1');
 
@@ -38,7 +38,7 @@ console.log('==============================');
     - 데이터 + ''
 */
 console.log(String(10));
-console.log(typeof String(10));
+console.log(typeof String(10)); 
 
 console.log((10).toString());
 console.log(typeof (10).toString());
