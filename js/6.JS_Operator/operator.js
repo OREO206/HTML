@@ -158,3 +158,4 @@ let type = typeof x;
 console.log(type);
 console.log(typeof type);
 
+    
